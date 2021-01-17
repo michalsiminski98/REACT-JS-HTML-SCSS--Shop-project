@@ -7,24 +7,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Oswald&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/92f3b6a3b9.js" crossorigin="anonymous"></script>
     <link rel="icon" type="images/png" href="src/images/logo.png"/>
-    <title>Peace shop</title>
+    <title>Formularz</title>
 </head>
 <body>
-<div class="wrapper">
-    <a href="index.html"><i class="fab fa-pied-piper"></i></a>
-   <a href=""><i class="fas fa-times"></i></a>
-    <div class="rainbow">
-        <div class="stain"></div>
-        <div class="stain"></div>
-        <div class="stain"></div>
-        <div class="stain"></div>
-        <div class="stain"></div>
-        <div class="stain"></div>
-        <div class="stain"></div>
-    </div>
-    <div class="text-wrapper">
-        <h1 class="text-wrapper__text">Nowa kolekcja</h1>
-    </div>
+    <div class="wrapper">
+    <menu class="menu">
+        <a href="index.html"><i class="fab fa-pied-piper"></i></a>
+        <a href=""><i class="fas fa-shopping-cart"></i></a>
+       <a href=""><i class="fas fa-times"></i></a>
+    </menu>
     <nav class="navigation">
         <ul class="navigation__menu">
             <li class="navigation__menu-item">
@@ -38,6 +29,16 @@
             </li>
         </ul>
     </nav>
-</div>
+    <h2 class="siteTitle">Formularz</h2>
+    <form>
+        <label for="name">Imię:</label><br>
+        <input type="text" name="name" id="name" placeholder="Podaj imię"><br>
+        <label for="e-mail">E-mail:</label><br>
+        <input type="email" name="lname" id="e-mail" placeholder="Podaj e-mail">
+        <label for="message">Napisz wiadomość</label>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <input type="button" value="Wyślij">
+      </form>
+    </div>
 </body>
 </html>
