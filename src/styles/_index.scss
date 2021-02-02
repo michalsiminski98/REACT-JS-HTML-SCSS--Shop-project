@@ -1,0 +1,47 @@
+body {
+  overflow: hidden;
+}
+.wrapper {
+  background-color: #fffff0;
+  height: 100vh;
+}
+.navigation--desktop {
+  display: none;
+}
+.navigation {
+  display: none;
+}
+.logo {
+  display: none;
+}
+.menu-button {
+  font-size: 6rem;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  cursor: pointer;
+  animation: menuButtonAnimation 5s linear infinite;
+}
+.text-wrapper {
+  width: 180px;
+  margin: 40% 0 0 40%;
+  &__text {
+    font-family: "Oswald";
+    color: $primary-color;
+    font-size: 4.3rem;
+    font-weight: 100;
+    text-align: right;
+    text-transform: uppercase;
+  }
+}
+@keyframes menuButtonAnimation {
+  0% {
+    color: black;
+  }
+  50% {
+    color: $primary-color;
+  }
+  100% {
+    color: black;
+  }
+}
