@@ -108,6 +108,18 @@
     left: 9%;
   }
 }
+// laptop
+@media (min-width: 1024px) {
+  .rainbow {
+    left: 30%;
+  }
+}
+// iPad Pro
+@media (width: 1024px) and (height: 1366px) {
+  .rainbow {
+    left: 10%;
+  }
+}
 // iPad Pro reverse
 @media (width: 1366px) and (height: 1024px) {
   .rainbow {

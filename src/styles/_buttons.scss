@@ -2,10 +2,7 @@
   display: none;
   .navigation__menu-item-link-button {
     box-sizing: border-box;
-    // width: 295px;
-    // height: 77px;
-    font-size: 4.2rem;
-    border-radius: 20px;
+    border-radius: 15px;
     border-color: transparent;
     background-image: linear-gradient(#35b788 5%, #2dc28d 70%, #35b788 95%);
     color: white;
@@ -35,6 +32,30 @@
       width: 170px;
       height: 55px;
       line-height: calc(57px / 2);
+    }
+  }
+}
+
+// laptop
+@media (min-width: 1024px) {
+  .navigation--desktop {
+    top: 0;
+    .navigation__menu-item-link-button {
+      width: 215px;
+      height: 60px;
+      margin-top: 15px;
+      font-size: 4.2rem;
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  .navigation--desktop {
+    top: 0;
+    .navigation__menu-item-link-button {
+      width: 235px;
+      height: 67px;
+      font-size: 3.6rem;
     }
   }
 }

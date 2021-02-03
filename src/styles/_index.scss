@@ -46,6 +46,38 @@ body {
     color: black;
   }
 }
+
+// Tablet
+@media (min-width: 768px) and (min-height: 673px) {
+  .logo {
+    font-size: 6.5rem;
+  }
+  .text-wrapper {
+    margin: 25% 0 0 0;
+  }
+  .menu-button {
+    display: none;
+  }
+  .navigation {
+    display: none;
+  }
+}
+
+// laptop
+@media (min-width: 1024px) {
+  .text-wrapper {
+    margin: 20% 0 0 8%;
+  }
+}
+@media (min-width: 1920px) {
+  .text-wrapper {
+    margin: 15% 0 0 17%;
+    width: 300px;
+    &__text {
+      font-size: 6.2rem;
+    }
+  }
+}
 // Iphone X
 @media (width: 375px) and (height: 812px) {
   .text-wrapper {
@@ -67,25 +99,21 @@ body {
     margin: 30% 0 0 60%;
   }
 }
-// Tablet
-@media (min-width: 768px) and (min-height: 673px) {
-  .logo {
-    font-size: 6.5rem;
-  }
+// iPad Pro
+@media (width: 1024px) and (height: 1366px) {
   .text-wrapper {
-    margin: 25% 0 0 0;
-  }
-  .menu-button {
-    display: none;
-  }
-  .navigation {
-    display: none;
+    margin: 25% 0 0 5%;
+    width: 300px;
+    &__text {
+      font-size: 6rem;
+    }
   }
 }
 // iPad Pro reverse
 @media (width: 1366px) and (height: 1024px) {
   .text-wrapper {
-    margin: 17% 0 0 17%;
+    margin: 20% 0 0 11%;
+    width: 300px;
     &__text {
       font-size: 5rem;
     }
