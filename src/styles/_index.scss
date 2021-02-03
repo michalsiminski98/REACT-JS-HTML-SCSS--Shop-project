@@ -7,9 +7,6 @@ body {
   background-color: #fffff0;
   height: 100vh;
 }
-.navigation--desktop {
-  display: none;
-}
 .logo {
   position: absolute;
   top: 5px;
@@ -72,4 +69,25 @@ body {
 }
 // Tablet
 @media (min-width: 768px) and (min-height: 673px) {
+  .logo {
+    font-size: 6.5rem;
+  }
+  .text-wrapper {
+    margin: 25% 0 0 0;
+  }
+  .menu-button {
+    display: none;
+  }
+  .navigation {
+    display: none;
+  }
+}
+// iPad Pro reverse
+@media (width: 1366px) and (height: 1024px) {
+  .text-wrapper {
+    margin: 17% 0 0 17%;
+    &__text {
+      font-size: 5rem;
+    }
+  }
 }

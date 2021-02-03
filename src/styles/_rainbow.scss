@@ -64,6 +64,53 @@
 @media (min-width: 768px) and (min-height: 673px) {
   .rainbow {
     top: 0;
+    left: 24%;
     transform: rotate(90deg);
+    &__stain {
+      height: 30px;
+    }
+    .rainbow__stain--purple {
+      top: 1vh;
+      left: -90vw;
+    }
+    .rainbow__stain--blue {
+      top: calc(2vh + 40px);
+      left: -100vw;
+    }
+    .rainbow__stain--turquoise {
+      top: calc(3vh + 80px);
+      left: -85vw;
+    }
+    .rainbow__stain--green {
+      top: calc(4vh + 120px);
+      left: -92vw;
+    }
+    .rainbow__stain--yellow {
+      top: calc(5vh + 160px);
+      left: -105vw;
+    }
+    .rainbow__stain--orange {
+      top: calc(6vh + 200px);
+      left: -70vw;
+    }
+    .rainbow__stain--red {
+      top: calc(7vh + 240px);
+      left: -100vw;
+    }
+    .rainbow__stain--darkRed {
+      top: calc(8vh + 280px);
+      left: -95vw;
+    }
+  }
+}
+@media (min-width: 768px) and (min-height: 1024px) {
+  .rainbow {
+    left: 9%;
+  }
+}
+// iPad Pro reverse
+@media (width: 1366px) and (height: 1024px) {
+  .rainbow {
+    left: 25%;
   }
 }
