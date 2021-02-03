@@ -7,7 +7,7 @@ const showAndCloseMenu = () => {
     TweenMax.to('.navigation',{duration: 2, y: 0, ease: "bounce.out"});
     flag = !flag;
 }else{
-    TweenMax.to('.navigation',{duration: 1, y: -window.innerHeight});
+    TweenMax.to('.navigation',{duration: 1, y: -(window.innerHeight + 300)});
     flag = !flag; 
 }}
 
