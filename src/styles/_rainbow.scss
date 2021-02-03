@@ -59,3 +59,11 @@
     transform: translateX(0%);
   }
 }
+
+// Tablet
+@media (min-width: 768px) and (min-height: 673px) {
+  .rainbow {
+    top: 0;
+    transform: rotate(90deg);
+  }
+}

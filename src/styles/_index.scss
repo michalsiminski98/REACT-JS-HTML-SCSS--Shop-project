@@ -1,3 +1,5 @@
+// index styles without rainbow and buttons
+
 body {
   overflow: hidden;
 }
@@ -46,4 +48,28 @@ body {
   100% {
     color: black;
   }
+}
+// Iphone X
+@media (width: 375px) and (height: 812px) {
+  .text-wrapper {
+    margin: 50% 0 0 45%;
+  }
+  .logo {
+    font-size: 6.5rem;
+  }
+}
+// Galaxy Fold
+@media (width: 280px) and (height: 653px) {
+  .text-wrapper {
+    margin: 55% 0 0 30%;
+  }
+}
+// Surface Duo
+@media (width: 540px) and (height: 720px) {
+  .text-wrapper {
+    margin: 30% 0 0 60%;
+  }
+}
+// Tablet
+@media (min-width: 768px) and (min-height: 673px) {
 }
