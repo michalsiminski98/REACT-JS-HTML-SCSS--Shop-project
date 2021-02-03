@@ -8,11 +8,12 @@ body {
 .navigation--desktop {
   display: none;
 }
-.navigation {
-  display: none;
-}
 .logo {
-  display: none;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  font-size: 5rem;
+  color: $primary-color;
 }
 .menu-button {
   font-size: 6rem;
@@ -20,6 +21,7 @@ body {
   top: 0;
   right: 10px;
   cursor: pointer;
+  z-index: 100;
   animation: menuButtonAnimation 5s linear infinite;
 }
 .text-wrapper {
