@@ -1,0 +1,99 @@
+body {
+  overflow-x: hidden;
+}
+
+.wrapper-contact {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: $background-color;
+  padding-bottom: 20px;
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    &__logo-icon {
+      display: none;
+    }
+    &__cart {
+      z-index: 100;
+      &-icon {
+        font-size: 4rem;
+        color: rgb(201, 201, 201);
+      }
+    }
+    &__menuButton {
+      z-index: 100;
+      &-icon {
+        font-size: 5rem;
+        color: black;
+      }
+    }
+  }
+  .siteTitle {
+    font-size: 4.2rem;
+    margin-top: 15px;
+    text-align: center;
+    color: $primary-color;
+    font-family: "Oswald";
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  .info-wrapper {
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    &__text {
+      font-size: 2.2rem;
+      font-weight: bold;
+      margin-top: 5px;
+    }
+    &__info {
+      color: $primary-color;
+      font-weight: 300;
+      font-size: 2.2rem;
+    }
+    &__map {
+      margin-top: 30px;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  // tablet
+  @media (min-width: 768px) and (min-height: 673px) {
+    .info-wrapper {
+      &__map {
+        height: 550px;
+      }
+    }
+    .navigation {
+      display: none;
+    }
+    .menu {
+      justify-content: left;
+      &__logo {
+        margin-left: 40px;
+        order: -1;
+        &-icon {
+          display: block;
+          font-size: 5rem;
+          color: $primary-color;
+        }
+      }
+      &__cart {
+        margin-left: 30px;
+        &-icon {
+          font-size: 4.2rem;
+        }
+      }
+      &__menuButton {
+        &-icon {
+          display: none;
+        }
+      }
+    }
+  }
+}

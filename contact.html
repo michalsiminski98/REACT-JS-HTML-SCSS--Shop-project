@@ -7,15 +7,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Oswald&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/92f3b6a3b9.js" crossorigin="anonymous"></script>
     <link rel="icon" type="images/png" href="src/images/logo.png"/>
+    <link rel="stylesheet" href="src/css/main.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
     <title>Kontakt</title>
 </head>
 <body>
-    <div class="wrapper">
-    <menu class="menu">
-       <a href="index.html"><i class="fab fa-pied-piper"></i></a>
-       <a href=""><i class="fas fa-shopping-cart"></i></a>
-      <a href=""><i class="fas fa-times"></i></a>
-    </menu>
+    <div class="wrapper-contact">
     <nav class="navigation">
         <ul class="navigation__menu">
             <li class="navigation__menu-item">
@@ -29,13 +26,44 @@
             </li>
         </ul>
     </nav>
+    <nav class="navigation--desktop navigation--desktop-contact">
+        <ul class="navigation__menu">
+            <li class="navigation__menu-item">
+            <a class="navigation__menu-item-link" href="shop.html">
+                <button class="navigation__menu-item-link-button">
+                    Sklep
+                </button>
+            </a>    
+            </li>
+            <li class="navigation__menu-item">
+                <a class="navigation__menu-item-link" href="form.html">
+                    <button class="navigation__menu-item-link-button">
+                        Formularz
+                    </button>
+                </a>    
+            </li>
+            <li class="navigation__menu-item">
+                <a class="navigation__menu-item-link" href="contact.html">
+                    <button class="navigation__menu-item-link-button">
+                        Kontakt
+                    </button>
+                </a>    
+            </li>
+        </ul>
+    </nav>
+    <menu class="menu">
+        <a href="" class="menu__cart"><i class="fas fa-shopping-cart menu__cart-icon"></i></a>
+        <a href="index.html" class="menu__logo"><i class="fab fa-pied-piper menu__logo-icon"></i></a>
+       <a href="" class="menu__menuButton menu-button"><i class="fas fa-times menu__menuButton-icon"></i></a>
+     </menu>
     <h2 class="siteTitle">Kontakt</h2>
     <section class="info-wrapper">
-        <p class="info-wrapper__name">Numer kontaktowy: <span class="info-wrapper__data">+48 000 000 000</span></p>
-        <p class="info-wrapper__name">E-mail: <span class="info-wrapper__data">lorem@gmail.com</span></p>
-        <p class="info-wrapper__name">Adres: <span class="info-wrapper__data">Lorem 00 Lorem 00-000</span></p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2167.151386565337!2d8.7337145!3d57.1002734!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spl!2spl!4v1610871371511!5m2!1spl!2spl" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <p class="info-wrapper__name info-wrapper__text">numer kontaktowy:  <br> <span class="info-wrapper__data info-wrapper__info"> +48 000 000 000</span></p>
+        <p class="info-wrapper__name info-wrapper__text">email: <br> <span class="info-wrapper__data info-wrapper__info">lorem@gmail.com</span></p>
+        <p class="info-wrapper__name info-wrapper__text">adres: <br> <span class="info-wrapper__data info-wrapper__info">Lorem 00 Lorem 00-000</span></p>
+        <iframe class="info-wrapper__map" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2167.151386565337!2d8.7337145!3d57.1002734!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spl!2spl!4v1610871371511!5m2!1spl!2spl" width="700" height="900" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </section>
 </div>
+<script src="src/js/menuButton.js"></script>
 </body>
 </html>

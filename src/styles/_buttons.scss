@@ -15,6 +15,9 @@
     position: absolute;
     top: 10%;
     right: 10%;
+    &-contact {
+      transform: translate(-15%, -40%);
+    }
     .navigation__menu-item-link-button {
       font-size: 2.2rem;
       width: 150px;
@@ -40,6 +43,9 @@
 @media (min-width: 1024px) {
   .navigation--desktop {
     top: 0;
+    &-contact {
+      transform: translateY(-25%);
+    }
     .navigation__menu-item-link-button {
       width: 215px;
       height: 60px;
@@ -59,11 +65,30 @@
     }
   }
 }
+// iPad reverse
+@media (width: 1024px) and (height: 768px) {
+  .navigation--desktop {
+    &-contact {
+      transform: translateY(-25%);
+    }
+  }
+}
+// iPadPro
+@media (width: 1024px) and (height: 1366px) {
+  .navigation--desktop {
+    &-contact {
+      transform: translateY(-15%);
+    }
+  }
+}
 // iPad Pro reverse
 @media (width: 1366px) and (height: 1024px) {
   .navigation--desktop {
     top: -5%;
     right: 15%;
+    &-contact {
+      transform: translate(0%, -15%);
+    }
     .navigation__menu-item-link-button {
       font-size: 4.2rem;
       width: 285px;
