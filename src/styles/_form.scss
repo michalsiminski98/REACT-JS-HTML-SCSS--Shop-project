@@ -1,0 +1,72 @@
+body {
+  overflow-x: hidden;
+}
+
+.form-wrapper {
+  background-color: $background-color;
+  min-height: 100vh;
+  padding-bottom: 50px;
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    &__logo-icon {
+      display: none;
+    }
+    &__cart {
+      z-index: 100;
+      &-icon {
+        font-size: 4rem;
+        color: rgb(201, 201, 201);
+      }
+    }
+    &__menuButton {
+      z-index: 100;
+      &-icon {
+        font-size: 5rem;
+        color: black;
+      }
+    }
+  }
+  .siteTitle {
+    font-size: 4.2rem;
+    margin-top: 15px;
+    text-align: center;
+    color: $primary-color;
+    font-family: "Oswald";
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  .form {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    &__label {
+      color: $secondary-color;
+      font-size: 2rem;
+    }
+    &__input {
+      width: 80%;
+      height: 30px;
+      font-size: 2rem;
+    }
+    &__input {
+      width: 80%;
+      height: 30px;
+      font-size: 2rem;
+      &--text {
+        height: 50%;
+      }
+      &--button {
+        margin-top: 10px;
+        border: 1px solid black;
+        width: 70px;
+        height: 30px;
+        font-size: 2rem;
+      }
+    }
+  }
+}
