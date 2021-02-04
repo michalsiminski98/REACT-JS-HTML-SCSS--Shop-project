@@ -69,4 +69,53 @@ body {
       }
     }
   }
+  // tablet
+  @media (min-width: 768px) and (min-height: 673px) {
+    .navigation {
+      display: none;
+    }
+    .menu {
+      justify-content: left;
+      &__logo {
+        margin-left: 40px;
+        order: -1;
+        &-icon {
+          display: block;
+          font-size: 5rem;
+          color: $primary-color;
+        }
+      }
+      &__cart {
+        margin-left: 30px;
+        &-icon {
+          font-size: 4.2rem;
+        }
+      }
+      &__menuButton {
+        &-icon {
+          display: none;
+        }
+      }
+    }
+    .siteTitle {
+      margin-top: 50px;
+    }
+    .form {
+      margin-top: 30px;
+    }
+  }
+  @media (min-width: 1440px) {
+    .siteTitle {
+      transform: translateY(-50%);
+    }
+    .form {
+      width: 40%;
+      margin: 30px auto;
+    }
+  }
+  @media (min-width: 1920px) {
+    .siteTitle {
+      margin-top: 100px;
+    }
+  }
 }
