@@ -1,0 +1,70 @@
+body {
+  overflow-x: hidden;
+}
+
+.shop-wrapper {
+  background-color: $background-color;
+  min-height: 100vh;
+  padding-bottom: 50px;
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    &__logo-icon {
+      display: none;
+    }
+    &__cart {
+      z-index: 100;
+      &-icon {
+        font-size: 4rem;
+        color: rgb(201, 201, 201);
+      }
+    }
+    &__menuButton {
+      z-index: 100;
+      &-icon {
+        font-size: 5rem;
+        color: black;
+      }
+    }
+  }
+
+  // tablet
+  @media (min-width: 768px) and (min-height: 673px) {
+    .navigation {
+      display: none;
+    }
+    .menu {
+      justify-content: left;
+      &__logo {
+        margin-left: 40px;
+        order: -1;
+        &-icon {
+          display: block;
+          font-size: 5rem;
+          color: $primary-color;
+        }
+      }
+      &__cart {
+        margin-left: 30px;
+        &-icon {
+          font-size: 4.2rem;
+        }
+      }
+      &__menuButton {
+        &-icon {
+          display: none;
+        }
+      }
+    }
+    .siteTitle {
+      margin-top: 50px;
+    }
+    .form {
+      margin-top: 30px;
+    }
+  }
+}
