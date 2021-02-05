@@ -28,7 +28,7 @@ class Form extends Component {
 
     handleOnSubmit = () => {
         const validation = this.handleValidation();
-        if(validation.accept){
+        if(!validation.accept){
             this.setState({
                 errors: {
                     name: validation.errorName,
@@ -36,6 +36,14 @@ class Form extends Component {
                     message: validation.errorMessage,
                 }
             })
+        }
+        else{
+            this.setState({
+                    name: '',
+                    email: '',
+                    message: '',
+            })
+            alert("Wiadomość została wysłana");
         }
     }
 
