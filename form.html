@@ -9,6 +9,9 @@
     <link rel="icon" type="images/png" href="src/images/logo.png"/>
     <link rel="stylesheet" href="src/css/main.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <title>Formularz</title>
 </head>
 <body>
@@ -58,15 +61,10 @@
     </nav>
     <h2 class="siteTitle">Formularz</h2>
     <form class="form">
-        <label for="name" class="form__label form__label--name">imię:</label><br>
-        <input class="form__input form__input--name" type="text" name="name" id="name" placeholder="Podaj imię"><br>
-        <label class="form__label form__label--email" for="e-mail">email:</label><br>
-        <input class="form__input form__input--email" type="email" name="lname" id="e-mail" placeholder="Podaj e-mail"> <br>
-        <label class="form__label form__label--text" for="message">napisz wiadomość:</label> <br>
-        <textarea class="form__input form__input--text" name="message" id="message" cols="30" rows="10"></textarea> <br>
-        <input class="form__input--button" type="button" value="Wyślij">
+
       </form>
     </div>
+	<script type="text/babel" src="src/js/form/Form.jsx"></script>
     <script src="src/js/menuButton.js"></script>
 </body>
 </html>
